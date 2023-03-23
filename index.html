@@ -1,42 +1,139 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Frontend Mentor | Intro component with sign up form</title>
 
-  Learn to code by watching others
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./main.js" defer></script>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main class="main">
+			<div class="text">
+				<h1 class="text__h1">Learn to code by watching others</h1>
+				<p class="text__p">
+					See how experienced developers solve problems in real-time.
+					Watching scripted tutorials is great, but understanding how
+					developers think is invaluable.
+				</p>
+			</div>
+			<div class="entry">
+				<p class="entry__banner">
+					<strong>Try it free 7 days</strong> then $20/mo. thereafter
+				</p>
+				<div class="form">
+					<form class="form__form" action="">
+						<p class="form__form__p form__form__p--error">
+							<input
+								type="text"
+								name="fname"
+								id="fname"
+								class="form__form__p__input form__form__p__input--error"
+								placeholder="First Name"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								alt="error"
+								width="24"
+								height="24"
+								class="form__form__p__img" />
+							<p class="form__form__p__p">First Name cannot be empty</p>
+						</p>
+						<p class="form__form__p">
+							<input
+								type="text"
+								name="lname"
+								id="lname"
+								class="form__form__p__input"
+								placeholder="Last Name"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								alt="error"
+								width="24"
+								height="24"
+								class="noerror form__form__p__img" />
+								<p class="noerror form__form__p__p">Last Name cannot be empty</p>
+						</p>
 
-  Try it free 7 days then $20/mo. thereafter
+						<p class="form__form__p">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								class="form__form__p__input"
+								placeholder="Email Address"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								alt="error"
+								width="24"
+								height="24"
+								class="noerror form__form__p__img" />
+								<p class="noerror form__form__p__p">Email cannot be empty</p>
+								<p class="noerror form__form__p__p">Looks like this is not an email</p>
+						</p>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+						<p class="form__form__p">
+							<input
+								type="password"
+								name="password"
+								id="password"
+								class="form__form__p__input"
+								placeholder="Password"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								alt="error"
+								width="24"
+								height="24"
+								class="noerror form__form__p__img" />
+								<p class="noerror form__form__p__p">Password cannot be empty</p>
+						</p>
 
-  Claim your free trial 
+						<button type="submit" class="form__form__btn">
+							CLAIM YOUR FREE TRIAL
+						</button>
+					</form>
+					<p class="form__p">
+						By clicking the button, you are agreeing to our
+						<a class="form__p__a">Terms and Services</a>
+					</p>
+				</div>
+			</div>
+		</main>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+		<!-- <footer>
+			<p class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Your Name Here</a>.
+			</p>
+		</footer> -->
+	</body>
 </html>
