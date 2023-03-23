@@ -44,74 +44,82 @@
 					<strong>Try it free 7 days</strong> then $20/mo. thereafter
 				</p>
 				<div class="form">
-					<form class="form__form" action="">
-						<p class="form__form__p form__form__p--error">
+					<form
+						class="form__form"
+						action="https://httpbin.org/"
+						method="post"
+						novalidate>
+						<div class="ibox">
 							<input
 								type="text"
 								name="fname"
 								id="fname"
-								class="form__form__p__input form__form__p__input--error"
-								placeholder="First Name"
-								required />
+								class="ibox__input"
+								placeholder="First Name" />
 							<img
 								src="./images/icon-error.svg"
 								alt="error"
 								width="24"
 								height="24"
-								class="form__form__p__img" />
-							<p class="form__form__p__p">First Name cannot be empty</p>
-						</p>
-						<p class="form__form__p">
+								class="ibox__img noerror" />
+							<p class="ibox__p noerror">
+								First Name cannot be empty
+							</p>
+						</div>
+						<div class="ibox">
 							<input
 								type="text"
 								name="lname"
 								id="lname"
-								class="form__form__p__input"
-								placeholder="Last Name"
-								required />
+								class="ibox__input"
+								placeholder="Last Name" />
 							<img
 								src="./images/icon-error.svg"
 								alt="error"
 								width="24"
 								height="24"
-								class="noerror form__form__p__img" />
-								<p class="noerror form__form__p__p">Last Name cannot be empty</p>
-						</p>
+								class="noerror ibox__img" />
+							<p class="noerror ibox__p">
+								Last Name cannot be empty
+							</p>
+						</div>
 
-						<p class="form__form__p">
+						<div class="ibox">
 							<input
 								type="email"
 								name="email"
 								id="email"
-								class="form__form__p__input"
-								placeholder="Email Address"
-								required />
+								class="ibox__input"
+								placeholder="Email Address" />
 							<img
 								src="./images/icon-error.svg"
 								alt="error"
 								width="24"
 								height="24"
-								class="noerror form__form__p__img" />
-								<p class="noerror form__form__p__p">Email cannot be empty</p>
-								<p class="noerror form__form__p__p">Looks like this is not an email</p>
-						</p>
+								class="noerror ibox__img" />
+							<p class="noerror ibox__p">Email cannot be empty</p>
+							<p class="noerror ibox__p">
+								Looks like this is not an email
+							</p>
+						</div>
 
-						<p class="form__form__p">
+						<div class="ibox">
 							<input
 								type="password"
 								name="password"
 								id="password"
-								class="form__form__p__input"
-								placeholder="Password"
-								required />
+								class="ibox__input"
+								placeholder="Password" />
 							<img
 								src="./images/icon-error.svg"
 								alt="error"
 								width="24"
 								height="24"
-								class="noerror form__form__p__img" />
-								<p class="noerror form__form__p__p">Password cannot be empty</p>
-						</p>
+								class="noerror ibox__img" />
+							<p class="noerror ibox__p">
+								Password cannot be empty
+							</p>
+						</div>
 
 						<button type="submit" class="form__form__btn">
 							CLAIM YOUR FREE TRIAL
